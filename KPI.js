@@ -512,19 +512,19 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
           properties: {
             inputvariable: {
               type: 'string',
-              title: 'Input in JSON format',
+              title: 'Completed',
               description: 'Data to render KPI',
               defaultValue: 'XXX'
             },
             InProgress: {
               type: 'string',
-              title: 'Input in JSON format',
+              title: 'In Progress',
               description: 'Data to render KPI',
               defaultValue: 'XXX'
             },
             Terminated: {
               type: 'string',
-              title: 'Input in JSON format',
+              title: 'Terminated',
               description: 'Data to render KPI',
               defaultValue: 'XXX'
             }
