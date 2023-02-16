@@ -507,7 +507,7 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
           fallbackDisableSubmit: false,
           description: 'Used to render KPIs of a Process in a form',
           iconUrl: 'one-line-text',
-          groupName: 'Visual',
+          groupName: 'Nintex Custom Plugins',
           version: '1.1',
           properties: {
             inputvariable: {
@@ -547,25 +547,26 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
           InProgress: this.InProgress,
           Terminated: this.Terminated
         });
-        return y`<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"><div class="row">
-  <div class="col-md-4">
-    <div class="kpiblock">
-      <div class="kpiheader">Completed</div>
-      <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.Completed}</div>
+        return y`<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <div class="row" style="padding:2px">
+    <div class="col-md-4">
+      <div class="kpiblock">
+        <div class="kpiheader">Completed</div>
+        <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.Completed}</div>
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="kpiblock">
-      <div class="kpiheader">In Progress</div>
-      <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.InProgress}</div>
+    <div class="col-md-4">
+      <div class="kpiblock">
+        <div class="kpiheader">In Progress</div>
+        <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.InProgress}</div>
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="kpiblock">
-      <div class="kpiheader">Terminated</div>
-      <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.Terminated}</div>
+    <div class="col-md-4">
+      <div class="kpiblock">
+        <div class="kpiheader">Terminated</div>
+        <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.Terminated}</div>
+      </div>
     </div>
-  </div>
   </div>`;
       }
     }]
