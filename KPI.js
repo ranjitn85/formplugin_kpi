@@ -558,11 +558,11 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
             },
             KPI2image: {
               type: 'string',
-              title: 'KPI1Image'
+              title: 'KPI2Image'
             },
             KPI2header: {
               type: 'string',
-              title: 'KPI1Header'
+              title: 'KPI2Header'
             },
             KPI3: {
               type: 'string',
@@ -570,11 +570,11 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
             },
             KPI3image: {
               type: 'string',
-              title: 'KPI1Image'
+              title: 'KPI3Image'
             },
             KPI3header: {
               type: 'string',
-              title: 'KPI1Header'
+              title: 'KPI3Header'
             }
           },
           standardProperties: {
