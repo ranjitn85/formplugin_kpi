@@ -440,7 +440,7 @@ const baseStyle = i$2`
   }
 
   .kpiblock{
-    width: 300px;
+    width: 200px;
     height: 120px;
     background-color: #e8f4ff;
     border-top-left-radius:15px;
@@ -542,48 +542,39 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
           properties: {
             KPI1: {
               type: 'string',
-              title: 'KPI1',
-              description: 'Data to render KPI'
+              title: 'KPI1'
             },
-            KPI1Image: {
+            KPI1image: {
               type: 'string',
-              title: 'KPI1Image',
-              description: 'Data to render KPI'
+              title: 'KPI1Image'
             },
-            KPI1Header: {
+            KPI1header: {
               type: 'string',
-              title: 'KPI1Header',
-              description: 'Data to render KPI'
+              title: 'KPI1Header'
             },
             KPI2: {
               type: 'string',
-              title: 'KPI2',
-              description: 'Data to render KPI'
+              title: 'KPI2'
             },
-            KPI2Image: {
+            KPI2image: {
               type: 'string',
-              title: 'KPI1Image',
-              description: 'Data to render KPI'
+              title: 'KPI1Image'
             },
-            KPI2Header: {
+            KPI2header: {
               type: 'string',
-              title: 'KPI1Header',
-              description: 'Data to render KPI'
+              title: 'KPI1Header'
             },
             KPI3: {
               type: 'string',
-              title: 'KPI3',
-              description: 'Data to render KPI'
+              title: 'KPI3'
             },
-            KPI3Image: {
+            KPI3image: {
               type: 'string',
-              title: 'KPI1Image',
-              description: 'Data to render KPI'
+              title: 'KPI1Image'
             },
-            KPI3Header: {
+            KPI3header: {
               type: 'string',
-              title: 'KPI1Header',
-              description: 'Data to render KPI'
+              title: 'KPI1Header'
             }
           },
           standardProperties: {
