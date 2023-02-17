@@ -440,8 +440,8 @@ const baseStyle = i$2`
   }
 
   .kpiblock{
-    width: 200px;
-    height: 80px;
+    width: 300px;
+    height: 120px;
     background-color: #e8f4ff;
     border-top-left-radius:15px;
   }
@@ -480,17 +480,47 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
     }, {
       kind: "field",
       decorators: [e()],
-      key: "Completed",
+      key: "KPI1header",
       value: void 0
     }, {
       kind: "field",
       decorators: [e()],
-      key: "InProgress",
+      key: "KPI1image",
       value: void 0
     }, {
       kind: "field",
       decorators: [e()],
-      key: "Terminated",
+      key: "KPI1",
+      value: void 0
+    }, {
+      kind: "field",
+      decorators: [e()],
+      key: "KPI2header",
+      value: void 0
+    }, {
+      kind: "field",
+      decorators: [e()],
+      key: "KPI2image",
+      value: void 0
+    }, {
+      kind: "field",
+      decorators: [e()],
+      key: "KPI2",
+      value: void 0
+    }, {
+      kind: "field",
+      decorators: [e()],
+      key: "KPI3header",
+      value: void 0
+    }, {
+      kind: "field",
+      decorators: [e()],
+      key: "KPI3image",
+      value: void 0
+    }, {
+      kind: "field",
+      decorators: [e()],
+      key: "KPI3",
       value: void 0
     }, {
       kind: "method",
@@ -510,23 +540,50 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
           groupName: 'Nintex Custom Plugins',
           version: '1.1',
           properties: {
-            inputvariable: {
+            KPI1: {
               type: 'string',
-              title: 'Completed',
-              description: 'Data to render KPI',
-              defaultValue: 'XXX'
+              title: 'KPI1',
+              description: 'Data to render KPI'
             },
-            InProgress: {
+            KPI1Image: {
               type: 'string',
-              title: 'In Progress',
-              description: 'Data to render KPI',
-              defaultValue: 'XXX'
+              title: 'KPI1Image',
+              description: 'Data to render KPI'
             },
-            Terminated: {
+            KPI1Header: {
               type: 'string',
-              title: 'Terminated',
-              description: 'Data to render KPI',
-              defaultValue: 'XXX'
+              title: 'KPI1Header',
+              description: 'Data to render KPI'
+            },
+            KPI2: {
+              type: 'string',
+              title: 'KPI2',
+              description: 'Data to render KPI'
+            },
+            KPI2Image: {
+              type: 'string',
+              title: 'KPI1Image',
+              description: 'Data to render KPI'
+            },
+            KPI2Header: {
+              type: 'string',
+              title: 'KPI1Header',
+              description: 'Data to render KPI'
+            },
+            KPI3: {
+              type: 'string',
+              title: 'KPI3',
+              description: 'Data to render KPI'
+            },
+            KPI3Image: {
+              type: 'string',
+              title: 'KPI1Image',
+              description: 'Data to render KPI'
+            },
+            KPI3Header: {
+              type: 'string',
+              title: 'KPI1Header',
+              description: 'Data to render KPI'
             }
           },
           standardProperties: {
@@ -543,28 +600,34 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
       key: "render",
       value: function render() {
         console.log('Props', {
-          Completed: this.Completed,
-          InProgress: this.InProgress,
-          Terminated: this.Terminated
+          KPI1: this.KPI1,
+          KPI1header: this.KPI1header,
+          KPI1image: this.KPI1image,
+          KPI2: this.KPI2,
+          KPI2header: this.KPI2header,
+          KPI2image: this.KPI2image,
+          KPI3: this.KPI3,
+          KPI3header: this.KPI3header,
+          KPI3image: this.KPI3image
         });
         return y`<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <div class="row" style="padding:2px">
     <div class="col-md-4">
       <div class="kpiblock">
-        <div class="kpiheader">Completed</div>
-        <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.Completed}</div>
+        <div class="kpiheader">${this.KPI1header}</div>
+        <div class="kpibody"><img padding="5px" height="60px" width="60px" src="${this.KPI1image}"/>   ${this.KPI1}</div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="kpiblock">
-        <div class="kpiheader">In Progress</div>
-        <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.InProgress}</div>
+        <div class="kpiheader">${this.KPI2header}</div>
+        <div class="kpibody"><img height="60px" width="60px" src="${this.KPI2image}"/>   ${this.KPI2}</div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="kpiblock">
-        <div class="kpiheader">Terminated</div>
-        <div class="kpibody"><img height="60px" width="60px" src="https://pbs.twimg.com/media/FaRMF3gX0AAA5yM.png"/>${this.Terminated}</div>
+        <div class="kpiheader">${this.KPI3header}</div>
+        <div class="kpibody"><img height="60px" width="60px" src="${this.KPI3image}"/>  ${this.KPI3}</div>
       </div>
     </div>
   </div>`;
