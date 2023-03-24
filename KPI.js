@@ -461,7 +461,7 @@ const baseStyle = i$2`
 `;
 const styles = [baseStyle];
 
-let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _LitElement) {
+let NintexSamplekpi = _decorate([e$1('control-kpi')], function (_initialize, _LitElement) {
   class NintexSamplekpi extends _LitElement {
     constructor(...args) {
       super(...args);
@@ -533,7 +533,7 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
       function getMetaConfig() {
         // plugin contract information
         return {
-          controlName: 'nintex-kpi',
+          controlName: 'control-kpi',
           fallbackDisableSubmit: false,
           description: 'Used to render KPIs of a Process in a form',
           iconUrl: 'one-line-text',
@@ -558,11 +558,11 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
             },
             KPI2image: {
               type: 'string',
-              title: 'KPI1Image'
+              title: 'KPI2Image'
             },
             KPI2header: {
               type: 'string',
-              title: 'KPI1Header'
+              title: 'KPI2Header'
             },
             KPI3: {
               type: 'string',
@@ -570,11 +570,11 @@ let NintexSamplekpi = _decorate([e$1('nintex-kpi')], function (_initialize, _Lit
             },
             KPI3image: {
               type: 'string',
-              title: 'KPI1Image'
+              title: 'KPI3Image'
             },
             KPI3header: {
               type: 'string',
-              title: 'KPI1Header'
+              title: 'KPI3Header'
             }
           },
           standardProperties: {
